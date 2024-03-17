@@ -10,7 +10,7 @@ devDependencies:
     version: 0.5.6
   '@lucia-auth/adapter-sqlite':
     specifier: ^3.0.0
-    version: 3.0.1(@libsql/client@0.5.6)(lucia@3.0.1)
+    version: 3.0.1(@libsql/client@0.5.6)(lucia@3.1.1)
   '@playwright/test':
     specifier: ^1.42.0
     version: 1.42.1
@@ -73,7 +73,7 @@ devDependencies:
     version: 3.6.0
   lucia:
     specifier: ^3.0.1
-    version: 3.0.1
+    version: 3.1.1
   oslo:
     specifier: ^1.1.3
     version: 1.1.3
@@ -809,7 +809,7 @@ packages:
     dev: true
     optional: true
 
-  /@lucia-auth/adapter-sqlite@3.0.1(@libsql/client@0.5.6)(lucia@3.0.1):
+  /@lucia-auth/adapter-sqlite@3.0.1(@libsql/client@0.5.6)(lucia@3.1.1):
     resolution: {integrity: sha512-bzr8+HALrbiYMb/+oL1SAnjbgFqlPs/Kj4lO57t/VvbXzmbpQEKk5Nv6hMpvWSkGAR9LbxYeQAtecikpKZVB0w==}
     peerDependencies:
       '@libsql/client': ^0.3.0
@@ -822,7 +822,7 @@ packages:
         optional: true
     dependencies:
       '@libsql/client': 0.5.6
-      lucia: 3.0.1
+      lucia: 3.1.1
     dev: true
 
   /@napi-rs/wasm-runtime@0.1.1:
@@ -3536,8 +3536,8 @@ packages:
       es5-ext: 0.10.62
     dev: true
 
-  /lucia@3.0.1:
-    resolution: {integrity: sha512-srwUkTCGgr6N4mFpaKZVZy5kwiRZdsrbIDv9Wrjar+xyw1MjojYQQ7oRbegjRWOZ3yI8xOOclK3sz/rga2J7/w==}
+  /lucia@3.1.1:
+    resolution: {integrity: sha512-Ygvgnqq7Ha7lYVaZATPwkPD2s2Qlsm71Z2o0byx/abNBfFldCRow5sNii6RqMsuMpK957RAI3Gw4/aWoagkc7A==}
     dependencies:
       oslo: 1.0.1
     dev: true
