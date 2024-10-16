@@ -57,11 +57,11 @@ importers:
         specifier: ^0.25.0
         version: 0.25.0
       drizzle-orm:
-        specifier: ^0.34.0
-        version: 0.34.0(@libsql/client@0.14.0)
+        specifier: ^0.35.0
+        version: 0.35.1(@libsql/client@0.14.0)
       drizzle-zod:
         specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8)
+        version: 0.5.1(drizzle-orm@0.35.1(@libsql/client@0.14.0))(zod@3.23.8)
       eslint:
         specifier: ^9.1.1
         version: 9.12.0(jiti@1.21.6)
@@ -1371,8 +1371,8 @@ packages:
     resolution: {integrity: sha512-Rcf0nYCAKizwjWQCY+d3zytyuTbDb81NcaPor+8NebESlUz1+9W3uGl0+r9FhU4Qal5Zv9j/7neXCSCe7DHzjA==}
     hasBin: true
 
-  drizzle-orm@0.34.0:
-    resolution: {integrity: sha512-6l9v65YoCr53UOWjyPPNYYQsZYvtzgxMKxljQ5VlJcS3/zM81MXnWeSfqQFlrUHxoTNgyi9BWHysUE8+c0odzA==}
+  drizzle-orm@0.35.1:
+    resolution: {integrity: sha512-HQxDdYuXlZFuvDPztlUIzrX8TqWa/Ej6uN6L0hkbuGL4slexOUMc3u4nXVU15RQ5QYbk+uLQnR6v1+OIrdCTXQ==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
@@ -3623,13 +3623,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.34.0(@libsql/client@0.14.0):
+  drizzle-orm@0.35.1(@libsql/client@0.14.0):
     optionalDependencies:
       '@libsql/client': 0.14.0
 
-  drizzle-zod@0.5.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8):
+  drizzle-zod@0.5.1(drizzle-orm@0.35.1(@libsql/client@0.14.0))(zod@3.23.8):
     dependencies:
-      drizzle-orm: 0.34.0(@libsql/client@0.14.0)
+      drizzle-orm: 0.35.1(@libsql/client@0.14.0)
       zod: 3.23.8
 
   eastasianwidth@0.2.0: {}
