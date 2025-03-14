@@ -8,6 +8,7 @@
 	let input_focused = $state(false);
 	let search_query = $state('');
 	let selected_items = $state<{ id: number; name: string }[]>([]);
+	
 	let filtered_technologies = $derived.by(() => {
 		if (!search_query) return technologies;
 		return technologies.filter(tech =>
@@ -73,12 +74,6 @@
 <div
 	class="relative block min-w-52 max-w-xs rounded-btn border border-primary p-2 align-top"
 >
-	<!-- hidden multi select with selected values added -->
-	<select multiple class="hidden">
-		{#each selected_items as item, index}
-			<option value={item.id} class=""> {item.name} </option>
-		{/each}
-	</select>
 	<!-- tags displayed -->
 	<div class="flex flex-wrap place-items-center">
 		{#each selected_items as item, index}
@@ -110,7 +105,9 @@
 			on:keydown={handle_keydown}
 		/>
 		<!-- clear currnet selection -->
-		<span class="">&times;</span>
+		{#if search_query.length > 0}
+			<span class="">&times;</span>
+		{/if}
 	</div>
 	<!-- list of available items -->
 	{#if input_focused}

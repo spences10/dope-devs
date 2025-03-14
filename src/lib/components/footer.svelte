@@ -3,12 +3,17 @@
 		<p class="flex-col">
 			Made by <a
 				href="https://scottspence.com"
-				class="link link-primary">Scott Spence</a
+				class="link link-primary"
 			>
+				Scott Spence
+			</a>
 			with
 			<a href="https://kit.svelte.dev" class="link link-primary">
 				SvelteKit
-			</a>.
+			</a>,
+			<a href="https://phind.com" class="link link-primary">
+				Phind
+			</a>,
 		</p>
 
 		<p>
