@@ -33,7 +33,7 @@
 		"daisyui": "^4.10.3",
 		"dotenv": "^16.4.7",
 		"drizzle-kit": "^0.26.0",
-		"drizzle-orm": "^0.34.0",
+		"drizzle-orm": "^0.43.0",
 		"drizzle-zod": "^0.5.1",
 		"eslint": "^9.23.0",
 		"eslint-config-prettier": "^9.1.0",
