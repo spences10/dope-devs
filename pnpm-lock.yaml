@@ -60,8 +60,8 @@ importers:
         specifier: ^0.34.0
         version: 0.34.0(@libsql/client@0.14.0)
       drizzle-zod:
-        specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8)
+        specifier: ^0.7.0
+        version: 0.7.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8)
       eslint:
         specifier: ^9.25.1
         version: 9.25.1(jiti@1.21.6)
@@ -1468,11 +1468,11 @@ packages:
       sqlite3:
         optional: true
 
-  drizzle-zod@0.5.1:
-    resolution: {integrity: sha512-C/8bvzUH/zSnVfwdSibOgFjLhtDtbKYmkbPbUCq46QZyZCH6kODIMSOgZ8R7rVjoI+tCj3k06MRJMDqsIeoS4A==}
+  drizzle-zod@0.7.1:
+    resolution: {integrity: sha512-nZzALOdz44/AL2U005UlmMqaQ1qe5JfanvLujiTHiiT8+vZJTBFhj3pY4Vk+L6UWyKFfNmLhk602Hn4kCTynKQ==}
     peerDependencies:
-      drizzle-orm: '>=0.23.13'
-      zod: '*'
+      drizzle-orm: '>=0.36.0'
+      zod: '>=3.0.0'
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1921,6 +1921,7 @@ packages:
 
   libsql@0.4.5:
     resolution: {integrity: sha512-sorTJV6PNt94Wap27Sai5gtVLIea4Otb2LUiAUyr3p6BPOScGMKGt5F1b5X/XgkNtcsDKeX5qfeBDj+PdShclQ==}
+    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -2019,6 +2020,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@3.3.2:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
@@ -3641,7 +3643,7 @@ snapshots:
     optionalDependencies:
       '@libsql/client': 0.14.0
 
-  drizzle-zod@0.5.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8):
+  drizzle-zod@0.7.1(drizzle-orm@0.34.0(@libsql/client@0.14.0))(zod@3.23.8):
     dependencies:
       drizzle-orm: 0.34.0(@libsql/client@0.14.0)
       zod: 3.23.8
