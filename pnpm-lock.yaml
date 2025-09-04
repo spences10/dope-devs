@@ -60,8 +60,8 @@ importers:
         specifier: ^0.43.1
         version: 0.43.1(@libsql/client@0.15.4)
       drizzle-zod:
-        specifier: ^0.7.1
-        version: 0.7.1(drizzle-orm@0.43.1(@libsql/client@0.15.4))(zod@3.23.8)
+        specifier: ^0.8.0
+        version: 0.8.3(drizzle-orm@0.43.1(@libsql/client@0.15.4))(zod@3.23.8)
       eslint:
         specifier: ^9.34.0
         version: 9.34.0(jiti@1.21.7)
@@ -1379,11 +1379,11 @@ packages:
       sqlite3:
         optional: true
 
-  drizzle-zod@0.7.1:
-    resolution: {integrity: sha512-nZzALOdz44/AL2U005UlmMqaQ1qe5JfanvLujiTHiiT8+vZJTBFhj3pY4Vk+L6UWyKFfNmLhk602Hn4kCTynKQ==}
+  drizzle-zod@0.8.3:
+    resolution: {integrity: sha512-66yVOuvGhKJnTdiqj1/Xaaz9/qzOdRJADpDa68enqS6g3t0kpNkwNYjUuaeXgZfO/UWuIM9HIhSlJ6C5ZraMww==}
     peerDependencies:
       drizzle-orm: '>=0.36.0'
-      zod: '>=3.0.0'
+      zod: ^3.25.0 || ^4.0.0
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1821,6 +1821,7 @@ packages:
 
   libsql@0.5.8:
     resolution: {integrity: sha512-+OopMI1wM/NvAJTHf3O3+beHd1YfKLnSVsOGBl3/7UBDZ4ydVadkbBk5Hjjs9d3ALC5rBaftMY59AvwyC8MzPw==}
+    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -3540,7 +3541,7 @@ snapshots:
     optionalDependencies:
       '@libsql/client': 0.15.4
 
-  drizzle-zod@0.7.1(drizzle-orm@0.43.1(@libsql/client@0.15.4))(zod@3.23.8):
+  drizzle-zod@0.8.3(drizzle-orm@0.43.1(@libsql/client@0.15.4))(zod@3.23.8):
     dependencies:
       drizzle-orm: 0.43.1(@libsql/client@0.15.4)
       zod: 3.23.8
