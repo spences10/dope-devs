@@ -30,7 +30,7 @@
 		"@upstash/ratelimit": "^2.0.6",
 		"@upstash/redis": "^1.35.3",
 		"autoprefixer": "^10.4.21",
-		"daisyui": "^4.10.3",
+		"daisyui": "^5.0.0",
 		"dotenv": "^16.5.0",
 		"drizzle-kit": "^0.31.0",
 		"drizzle-orm": "^0.43.1",
